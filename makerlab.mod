@@ -1,11 +1,15 @@
-PCBNEW-LibModule-V1  Thursday, 17 April 2014 23:03:56
+PCBNEW-LibModule-V1  Thursday, 24 April 2014 09:54:29
 # encoding utf-8
 Units mm
 $INDEX
 12AWG_Pad
 16AWG_Pad
+BALUN
+CHIP_ANTENNA
 Fuse_Radial_Lead
+LED_RGB_SMD
 Mrf24J40MA
+PUSHBUTTON_SMD_PTS810
 QFN-64
 RAC0X-C
 RelayRAS
@@ -13,6 +17,7 @@ SMDPushButton
 SMDResonator
 SOT223_3PIN
 USB-A_SMT
+XT_SMD_TSX-3225
 makerlabIcon10mm
 makerlabIcon10mmInv
 makerlabIcon1mm
@@ -70,6 +75,104 @@ Ne 0 ""
 Po 0 0
 $EndPAD
 $EndMODULE 16AWG_Pad
+$MODULE BALUN
+Po 0 0 0 15 53583D43 00000000 ~~
+Li BALUN
+Sc 0
+AR 
+Op 0 0 0
+T0 0 2.5 1 1 0 0.15 N V 21 N "BALUN"
+T1 0 -2.3 1 1 0 0.15 N V 21 N "VAL**"
+DS 0.8 0.2 1 0.2 0.1 21
+DS 0.8 -0.2 1 -0.2 0.1 21
+DS 0.4 -0.2 0.4 0.2 0.1 21
+DS 0.4 0.2 0.8 0.2 0.1 21
+DS 0.8 -0.2 0.4 -0.2 0.1 21
+DS 1 0 1 0.7 0.1 21
+DS 1 0.7 -1 0.7 0.1 21
+DS -1 0.7 -1 0 0.1 21
+DS -1 0 -1 -0.7 0.1 21
+DS -1 -0.7 1 -0.7 0.1 21
+DS 1 -0.7 1 0 0.1 21
+$PAD
+Sh "1" R 0.35 1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.65 -0.9
+$EndPAD
+$PAD
+Sh "2" R 0.35 1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 -0.9
+$EndPAD
+$PAD
+Sh "3" R 0.35 1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.65 -0.9
+$EndPAD
+$PAD
+Sh "4" R 0.35 1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.65 0.9
+$EndPAD
+$PAD
+Sh "5" R 0.35 1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 0.9
+$EndPAD
+$PAD
+Sh "6" R 0.35 1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.65 0.9
+$EndPAD
+$EndMODULE BALUN
+$MODULE CHIP_ANTENNA
+Po 0 0 0 15 5357F285 00000000 ~~
+Li CHIP_ANTENNA
+Sc 0
+AR 
+Op 0 0 0
+T0 0 2.2 1 1 0 0.15 N V 21 N "CHIP_ANTENNA"
+T1 0 -2 1 1 0 0.15 N V 21 N "VAL**"
+DS 4.2 -5.1 4.2 5.1 0.1 24
+DS 4.2 -5.1 -4.2 -5.1 0.1 24
+DS -4.2 -5.1 -4.2 5.1 0.1 24
+DS -4.2 5.1 4.2 5.1 0.1 24
+DS -0.9 -0.2 -0.6 -0.2 0.1 21
+DS -0.6 -0.2 -0.6 0.1 0.1 21
+DS -0.6 0.1 -1.3 0.1 0.1 21
+DS -1.3 0.1 -1.3 -0.2 0.1 21
+DS -1.3 -0.2 -0.6 -0.2 0.1 21
+DS -2.6 -1.1 2.6 -1.1 0.1 21
+DS 2.6 -1.1 2.6 1.1 0.1 21
+DS 2.6 1.1 -2.6 1.1 0.1 21
+DS -2.6 1.1 -2.6 -1.1 0.1 21
+$PAD
+Sh "" R 1 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.8 0
+$EndPAD
+$PAD
+Sh "1" R 1 1.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.8 0
+$EndPAD
+$EndMODULE CHIP_ANTENNA
 $MODULE Fuse_Radial_Lead
 Po 0 0 0 15 5232AFB7 00000000 ~~
 Li Fuse_Radial_Lead
@@ -97,6 +200,50 @@ Ne 0 ""
 Po -2.54 0
 $EndPAD
 $EndMODULE Fuse_Radial_Lead
+$MODULE LED_RGB_SMD
+Po 0 0 0 15 53591F9A 00000000 ~~
+Li LED_RGB_SMD
+Sc 0
+AR 
+Op 0 0 0
+T0 0 2.4 1 1 0 0.15 N V 21 N "LED_RGB_SMD"
+T1 0 -2.2 1 1 0 0.15 N V 21 N "VAL**"
+DC 0 0 0.9 -0.8 0.1 21
+DS -1.6 -0.9 -1.1 -1.4 0.1 21
+DS 1.6 1.4 1.6 -1.4 0.1 21
+DS 1.6 -1.4 -1.6 -1.4 0.1 21
+DS -1.6 -1.4 -1.6 1.4 0.1 21
+DS 0 1.4 1.6 1.4 0.1 21
+DS 0 1.4 -1.6 1.4 0.1 21
+$PAD
+Sh "1" R 1 0.7 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.55 -0.7
+$EndPAD
+$PAD
+Sh "2" R 1 0.7 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.55 0.7
+$EndPAD
+$PAD
+Sh "3" R 1 0.7 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.55 0.7
+$EndPAD
+$PAD
+Sh "4" R 1 0.7 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.55 -0.7
+$EndPAD
+$EndMODULE LED_RGB_SMD
 $MODULE Mrf24J40MA
 Po 0 0 0 15 5222A976 00000000 ~~
 Li Mrf24J40MA
@@ -198,470 +345,515 @@ Ne 0 ""
 Po 8.89 -2.54
 $EndPAD
 $EndMODULE Mrf24J40MA
+$MODULE PUSHBUTTON_SMD_PTS810
+Po 0 0 0 15 5359259C 00000000 ~~
+Li PUSHBUTTON_SMD_PTS810
+Sc 0
+AR 
+Op 0 0 0
+T0 0 2.6 1 1 0 0.15 N V 21 N "PUSHBUTTON_SMD_PTS810"
+T1 0 -2.4 1 1 0 0.15 N V 21 N "VAL**"
+DS 1 -1 -1 -1 0.1 21
+DS -1 1 1 1 0.1 21
+DA 0 0 -1 1 900 0.1 21
+DA 0 0 1 -1 900 0.1 21
+DS -2.1 0.4 -0.9 1.6 0.1 21
+DS 0.9 1.6 2.1 0.4 0.1 21
+DS 2.1 -0.4 0.9 -1.6 0.1 21
+DS -2.1 -0.4 -0.9 -1.6 0.1 21
+DS -2.1 1.6 2.1 1.6 0.1 21
+DS 2.1 1.6 2.1 -1.6 0.1 21
+DS 2.1 -1.6 -2.1 -1.6 0.1 21
+DS -2.1 -1.6 -2.1 1.6 0.1 21
+$PAD
+Sh "1" R 1.2 0.65 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.05 -1.075
+$EndPAD
+$PAD
+Sh "2" R 1.2 0.65 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.05 -1.075
+$EndPAD
+$PAD
+Sh "3" R 1.2 0.65 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.05 1.075
+$EndPAD
+$PAD
+Sh "4" R 1.2 0.65 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.05 1.075
+$EndPAD
+$EndMODULE PUSHBUTTON_SMD_PTS810
 $MODULE QFN-64
-Po 0 0 0 15 534CD17D 00000000 ~~
+Po 0 0 0 15 5350B90B 00000000 ~~
 Li QFN-64
 Sc 0
 AR 
 Op 0 0 0
 T0 0 -8.5 1.524 1.524 0 0.15 N V 21 N "QFN-64"
 T1 0 8.5 1.524 1.524 0 0.15 N V 21 N "Val**"
-DS -4.1 4.1 -4.1 -4.1 0.05 21
-DS 4.1 4.1 -4.1 4.1 0.05 21
-DS 4.1 -4.2 4.1 4.1 0.05 21
-DS -4.1 -4.1 4.1 -4.1 0.05 21
+DC -3.302 -3.302 -3.048 -3.302 0.15 21
 DS -4.5 -4.5 4.5 -4.5 0.05 21
 DS 4.5 -4.5 4.5 4.5 0.05 21
 DS 4.5 4.5 -4.5 4.5 0.05 21
 DS -4.5 4.5 -4.5 -4.5 0.05 21
-DS -4.6 -4.25 -4.6 -3.25 0.05 21
 $PAD
 Sh "1" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 -3.75
+Po -4.473 -3.75
 $EndPAD
 $PAD
 Sh "2" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 -3.25
+Po -4.473 -3.25
 $EndPAD
 $PAD
 Sh "3" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 -2.75
+Po -4.473 -2.75
 $EndPAD
 $PAD
 Sh "4" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 -2.25
+Po -4.473 -2.25
 $EndPAD
 $PAD
 Sh "5" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 -1.75
+Po -4.473 -1.75
 $EndPAD
 $PAD
 Sh "6" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 -1.25
+Po -4.473 -1.25
 $EndPAD
 $PAD
 Sh "7" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 -0.75
+Po -4.473 -0.75
 $EndPAD
 $PAD
 Sh "8" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 -0.25
+Po -4.473 -0.25
 $EndPAD
 $PAD
 Sh "9" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 0.25
+Po -4.473 0.25
 $EndPAD
 $PAD
 Sh "10" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 0.75
+Po -4.473 0.75
 $EndPAD
 $PAD
 Sh "11" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 1.25
+Po -4.473 1.25
 $EndPAD
 $PAD
 Sh "12" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 1.75
+Po -4.473 1.75
 $EndPAD
 $PAD
 Sh "13" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 2.25
+Po -4.473 2.25
 $EndPAD
 $PAD
 Sh "14" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 2.75
+Po -4.473 2.75
 $EndPAD
 $PAD
 Sh "15" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 3.25
+Po -4.473 3.25
 $EndPAD
 $PAD
 Sh "16" R 0.25 1 0 0 2700
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -4.6 3.75
+Po -4.473 3.75
 $EndPAD
 $PAD
 Sh "17" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -3.75 4.6
+Po -3.75 4.473
 $EndPAD
 $PAD
 Sh "18" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -3.25 4.6
+Po -3.25 4.473
 $EndPAD
 $PAD
 Sh "19" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -2.75 4.6
+Po -2.75 4.473
 $EndPAD
 $PAD
 Sh "20" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -2.25 4.6
+Po -2.25 4.473
 $EndPAD
 $PAD
 Sh "21" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -1.75 4.6
+Po -1.75 4.473
 $EndPAD
 $PAD
 Sh "22" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -1.25 4.6
+Po -1.25 4.473
 $EndPAD
 $PAD
 Sh "23" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -0.75 4.6
+Po -0.75 4.473
 $EndPAD
 $PAD
 Sh "24" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -0.25 4.6
+Po -0.25 4.473
 $EndPAD
 $PAD
 Sh "25" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 0.25 4.6
+Po 0.25 4.473
 $EndPAD
 $PAD
 Sh "26" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 0.75 4.6
+Po 0.75 4.473
 $EndPAD
 $PAD
 Sh "27" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 1.25 4.6
+Po 1.25 4.473
 $EndPAD
 $PAD
 Sh "28" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 1.75 4.6
+Po 1.75 4.473
 $EndPAD
 $PAD
 Sh "29" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 2.25 4.6
+Po 2.25 4.473
 $EndPAD
 $PAD
 Sh "30" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 2.75 4.6
+Po 2.75 4.473
 $EndPAD
 $PAD
 Sh "31" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 3.25 4.6
+Po 3.25 4.473
 $EndPAD
 $PAD
 Sh "32" R 0.25 1 0 0 0
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 3.75 4.6
+Po 3.75 4.473
 $EndPAD
 $PAD
 Sh "33" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 3.75
+Po 4.473 3.75
 $EndPAD
 $PAD
 Sh "34" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 3.25
+Po 4.473 3.25
 $EndPAD
 $PAD
 Sh "35" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 2.75
+Po 4.473 2.75
 $EndPAD
 $PAD
 Sh "36" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 2.25
+Po 4.473 2.25
 $EndPAD
 $PAD
 Sh "37" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 1.75
+Po 4.473 1.75
 $EndPAD
 $PAD
 Sh "38" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 1.25
+Po 4.473 1.25
 $EndPAD
 $PAD
 Sh "39" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 0.75
+Po 4.473 0.75
 $EndPAD
 $PAD
 Sh "40" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 0.25
+Po 4.473 0.25
 $EndPAD
 $PAD
 Sh "41" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 -0.25
+Po 4.473 -0.25
 $EndPAD
 $PAD
 Sh "42" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 -0.75
+Po 4.473 -0.75
 $EndPAD
 $PAD
 Sh "43" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 -1.25
+Po 4.473 -1.25
 $EndPAD
 $PAD
 Sh "44" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 -1.75
+Po 4.473 -1.75
 $EndPAD
 $PAD
 Sh "45" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 -2.25
+Po 4.473 -2.25
 $EndPAD
 $PAD
 Sh "46" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 -2.75
+Po 4.473 -2.75
 $EndPAD
 $PAD
 Sh "47" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 -3.25
+Po 4.473 -3.25
 $EndPAD
 $PAD
 Sh "48" R 0.25 1 0 0 900
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 4.6 -3.75
+Po 4.473 -3.75
 $EndPAD
 $PAD
 Sh "49" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 3.75 -4.65
+Po 3.75 -4.523
 $EndPAD
 $PAD
 Sh "50" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 3.25 -4.65
+Po 3.25 -4.523
 $EndPAD
 $PAD
 Sh "51" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 2.75 -4.65
+Po 2.75 -4.523
 $EndPAD
 $PAD
 Sh "52" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 2.25 -4.65
+Po 2.25 -4.523
 $EndPAD
 $PAD
 Sh "53" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 1.75 -4.65
+Po 1.75 -4.523
 $EndPAD
 $PAD
 Sh "54" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 1.25 -4.65
+Po 1.25 -4.523
 $EndPAD
 $PAD
 Sh "55" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 0.75 -4.65
+Po 0.75 -4.523
 $EndPAD
 $PAD
 Sh "56" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po 0.25 -4.65
+Po 0.25 -4.523
 $EndPAD
 $PAD
 Sh "57" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -0.25 -4.65
+Po -0.25 -4.523
 $EndPAD
 $PAD
 Sh "58" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -0.75 -4.65
+Po -0.75 -4.523
 $EndPAD
 $PAD
 Sh "59" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -1.25 -4.65
+Po -1.25 -4.523
 $EndPAD
 $PAD
 Sh "60" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -1.75 -4.65
+Po -1.75 -4.523
 $EndPAD
 $PAD
 Sh "61" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -2.25 -4.65
+Po -2.25 -4.523
 $EndPAD
 $PAD
 Sh "62" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -2.75 -4.65
+Po -2.75 -4.523
 $EndPAD
 $PAD
 Sh "63" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -3.25 -4.65
+Po -3.25 -4.523
 $EndPAD
 $PAD
 Sh "64" R 0.25 1 0 0 1800
 Dr 0 0 0
 At SMD N 00808000
 Ne 0 ""
-Po -3.75 -4.65
+Po -3.75 -4.523
 $EndPAD
 $PAD
 Sh "65" R 5 5 0 0 0
@@ -985,6 +1177,48 @@ Ne 0 ""
 Po -2.3 1.5
 $EndPAD
 $EndMODULE USB-A_SMT
+$MODULE XT_SMD_TSX-3225
+Po 0 0 0 15 53570535 00000000 ~~
+Li XT_SMD_TSX-3225
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -2.25 1 1 0 0.15 N V 21 N "XT"
+T1 0 2.5 1 1 0 0.15 N V 21 N "VAL**"
+DC -1.9 1.5 -1.8 1.5 0.1 21
+DS -1.6 1.25 1.6 1.25 0.15 21
+DS 1.6 1.25 1.6 -1.25 0.15 21
+DS 1.6 -1.25 -1.6 -1.25 0.15 21
+DS -1.6 -1.25 -1.6 1.25 0.15 21
+$PAD
+Sh "1" R 1.4 1.15 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.05 0.8
+$EndPAD
+$PAD
+Sh "2" R 1.4 1.15 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.05 0.8
+$EndPAD
+$PAD
+Sh "3" R 1.4 1.15 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.05 -0.8
+$EndPAD
+$PAD
+Sh "4" R 1.4 1.15 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.05 -0.8
+$EndPAD
+$EndMODULE XT_SMD_TSX-3225
 $MODULE makerlabIcon10mm
 Po 0 0 0 15 00000000 00000000 ~~
 Li makerlabIcon10mm

@@ -1,4 +1,9 @@
-EESchema-DOCLIB  Version 2.0  Date: Tuesday, 15 April 2014 00:09:22
+EESchema-DOCLIB  Version 2.0  Date: Thursday, 24 April 2014 00:10:21
+#
+$CMP CONN_15
+D Symbole general de connexion
+K CONN
+$ENDCMP
 #
 $CMP MRF24J40MA
 D 802.15.4 wireless module.
