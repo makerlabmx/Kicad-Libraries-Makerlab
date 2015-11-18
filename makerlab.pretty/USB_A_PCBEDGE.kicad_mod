@@ -1,0 +1,23 @@
+(module USB_A_PCBEDGE (layer F.Cu) (tedit 536AD43A)
+  (fp_text reference J1 (at 0 -15) (layer F.SilkS) hide
+    (effects (font (size 1.5 1.5) (thickness 0.15)))
+  )
+  (fp_text value USB (at 0 -17) (layer F.SilkS) hide
+    (effects (font (size 1.5 1.5) (thickness 0.15)))
+  )
+  (fp_text user "For best results" (at 0 -13.5) (layer F.SilkS) hide
+    (effects (font (size 0.5 0.5) (thickness 0.1)))
+  )
+  (fp_text user "Use 0.078'' or 2mm board thickness" (at 0 -12.5) (layer F.SilkS) hide
+    (effects (font (size 0.5 0.5) (thickness 0.1)))
+  )
+  (fp_line (start -6 -11.5) (end 6 -11.5) (layer Dwgs.User) (width 0.15))
+  (fp_line (start 6 -11.5) (end 6 0) (layer Dwgs.User) (width 0.15))
+  (fp_line (start -6 0) (end -6 -11.5) (layer Dwgs.User) (width 0.15))
+  (pad 2 smd rect (at -1 -6.1) (size 1 6.5) (layers F.Cu F.Paste F.Mask))
+  (pad 3 smd rect (at 1 -6.1) (size 1 6.5) (layers F.Cu F.Paste F.Mask))
+  (pad 4 smd rect (at 3.5 -6.6) (size 1.5 7.5) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at -3.5 -6.6) (size 1.5 7.5) (layers F.Cu F.Paste F.Mask))
+  (pad "" smd oval (at -2.5 -6.5) (size 1.5 7.5) (layers B.Cu B.Paste B.Mask))
+  (pad "" smd oval (at 2.5 -6.5) (size 1.5 7.5) (layers B.Cu B.Paste B.Mask))
+)
